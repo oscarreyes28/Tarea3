@@ -18,3 +18,11 @@ void espacios(char* fuente) {
 	}
 	*i = 0;
 }
+// Función para apilar en nuestra pila
+void apilar(char elem) {
+	expre[++top] = elem;
+}
+//Función para "desapilar" en nuestra pila
+char desapilar() {
+	return (expre[top--]);
+}
